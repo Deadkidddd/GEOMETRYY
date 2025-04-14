@@ -59,12 +59,12 @@ const whyTextElements = document.getElementsByClassName("changes_why_content");
 async function showWhyText() {
     let topOffset = 65; // Initialize topOffset to 65
     for (let whyText of whyTextElements) {
-            change(whyText, "absolute", "75px", "red");
+            change(whyText, "absolute", "30px", "red");
             whyText.style.animation = "fadein 0.5s";
             whyText.style.display = "block";
             whyText.style.top = "40%"; // Set the initial top position to 40%
             await delay(5000); // Wait for 5 seconds before showing the next element
-            change(whyText, "absolute", "50px", "blue");
+            change(whyText, "absolute", "20px", "blue");
             changeTop(whyText, topOffset);
             topOffset += 5; // Increment topOffset for the next element
 
