@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Geometry</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body { margin: 0; }
+    </style>
+  </head>
+  <body>
+    <h2 id="dropdown_menu">CLICK HERE</h2>
+    <p id ="dm_one" class = "dm_material">The Changes and Why</p>
+    <p id ="dm_two" class = "dm_material">SA and Area Differences</p>
+    <p id ="dm_three" class = "dm_material">Math Involved</p>
+    <img id ="picture_of_my_cat" class = "dm_material" src="./20250323-172618-1-unscreen.gif" alt="cute image of my silly black cat" controls/>
+
+  <!--Content for Changes and Why-->
+  <p id ="reg_plastic_bottles" class="changes_why_content">Regular Plastic Bottles are boring and overated, destroying the environment without even looking fashionable? Disgusting. </p>
+  <p id ="reg_plastic_bottles2" class="changes_why_content">The boring straight cylinders used, not only are depressing to look at but kill the environment slowly. Like islands made of plastic? Atleast have the plastic be in silly shapes</p>
+  <p id ="reg_plastic_bottles3" class="changes_why_content">The straight cylinders not only look vial in those rafts made out of plastic but, use more surface area than other designs meaning more plastic is used</p>
+  <p id ="reg_plastic_bottles4" class="changes_why_content">Although the solution is quite simple, to merely choose a different shape. Bags and other devices have been accustomed to these disgusting bottle designs</p>
+  <p id ="reg_plastic_bottles5" class="changes_why_content">But the skull bottle finds a solution, based around flasks, the bottle can be strapped on, not having pesky handles but instead a simple strap, taking up less surface area, looking interesting, and making me throw my computer trying to code the design in</p>
+
+  <!--Content for SA and Differences-->
+  <p id="sa_area_diff" class="sa_area_diff_content">Regular Water bottles<br>Volume: 499.8cm<sup>3</sup><br>Surface Area: 440.14cm<sup>2</sup></p>
+  <p id="sa_area_diff2" class="sa_area_diff_content">Skull Water bottles<br>Volume: <br>Surface Area: 440.14cm<sup>2</sup></p>
+
+  <!--The Math YESSSIRY-->
+  <p id="math_involved" class="math_involved_content">Regular Water bottles<br>Volume: 499.8cm<sup>3</sup> | Surface Area: 440.14cm<sup>2</sup></p>
+  <p id="math_involved2" class="math_involved_content">Skull Water bottles<br>Volume: 499.8cm<sup>3</sup> | Surface Area: ?</p>
+  <p id="math_involved3" class="math_involved_content">V<sub>Reg Bottle</sub> &lt;= V<sub>Skull Bottle</sub></p>
+  <p id="math_involved4" class="math_involved_content">SA<sub>Reg Bottle(RB)</sub> &gt; SA<sub>Skull Bottle(SB)</sub></p>
+  <p id="math_involved5" class="math_involved_content">V<sub>SB</sub> => 499.8 | SA<sub>SB</sub> &lt; 440.14</p>
+
+  <!--Math: volume of skull bottle and parts-->
+  <p id="math_involved6" class="math_involved_content" class="help_me_god">V<sub>SB</sub> = 499.8</p>
+  <p id="math_involved7" class="math_involved_content" class="help_me_god">SB(Sphere(s), Big Truncated Cone(TCB), Small Truncated Cone(TCS))</p>
+  <p id="math_involved8" class="math_involved_content" class="help_me_god"><span style="color: red;">Three parts</span>, Sphere main volume, TCB mid volume, TCS small volume</p>
+  <p id="math_involved9" class="math_involved_content" class="help_me_god">499.8/<span style="color: red;">3</span> = 166.6 => <span id="help" class="help_me">166.6 + 166.6</span> = 333.2 | <span id="ex_one">166.6</span> /<span id="ex_two" style="color: red;"> 3</span> = 55.5 |<span id="ex_three" style="color: red;"> 55.5 + 55.5 </span>= 111</p>
+  <ul id="math_involved10" class="math_involved_content" class="help_me_god">
+    <li>s: 333.2 = 4/3 * 3.14 * r^3</li>
+    <li>4/3(3.14) => 4.19 | 4.19r = 333.2 => 333.2/4.19 = 79.52 => 3^sqrt(79.52) = 4.3</li>
+    <li>TCB: 111 = 1/3(3.14 * h (r^2 +(r * R)+ R^2))</li>
+    <li>R = 4.3 /<span id="ex_four" style="color: red;"> 1.75 </span>= 2.46 => R = 2.46 | r = 4.3/ <span id="ex_five" style="color: red;">2</span> => r = 2.15</li>
+    <li>111 = 1/3(3.14 * h (2.15^2 +(2.15 * 2.46)+ 2.46^2)) => 1/3(3.14 * h (15.96)) | 333 = 3.14h(15.96) => 20.86 = 3.14h => 6.64 = h</li>
+    <li>h = 6.64|R = 2.46|r = 2.15|</li>
+    <li>TCS: 55.5 = 1/3(3.14 * h (r^2 +(r * R)+ R^2))</li>
+    <li>R = 4.3 /<span id="ex_six" style="color: red;"> 2 </span>= 2.15 => R = 2.15 | r = 
+  </ul>
+
+
+  <!--Math for displaying shape-->
+  <p id="stuff" class="math_involved_content" class="stuffs">For the truncated cones radii' that touch the sphere to match the curvater of the sphere, I basically did arcsegments/circumference in an overcomplicated formula. Ofc the radii' produced is based on the radius of the sphere, meaning it would be a lot of guessing to get exact volume of a regular water bottle</p>
+  <p id="stuff2" class="math_involved_content" class="stuffs">Now with the formulas for volume, for a sphere <i>4/3 * 3.14 * r^3</i> for a truncated cone <i>1/3(3.14h(r^2 +(r * R)+ R^2))</i> the computer could find the volume and print it or console log it.</p>
+  <p id="stuff3" class="math_involved_content" class="stuffs">So if going by it this way you can mess with the value of the spheres radius to get a bigger volume but smaller surface area</p>
+  <label id="inputa" class="math_involved_content" class="stuffs" class="inputs"><p><input type="number" id="1inputa"></p></label><button id="btn" class="math_involved_content" class="stuffs" class="inputs">Submit</button>
+  <p id="input1" class="stuffs">HI</p>
+
+  <!--EXTRASSSS-->
+  <p id="help_me_text" class="help_me">Since Sphere has biggest volume, I'm taking 2/3 of the original divided volume to make the sphere volume</p>
+  <p id="help_me_text2" class="help_me2">Due to one truncated cone being bigger than the other, I divide by three to then be able to multiply one of the values by two for one volume, and have the remainder value as the smaller volume</p>
+  <p id="help_me_text3" class="help_me3">For the bigger Truncated cone I'm combining 2 outta the three values, to get a bigger volume than the smaller truncated cone</p>
+  <p id="background" class="math_involved_content" class="help_me_god">Doing it by hand, I just made up the ratios. Sphere having 2/3d volume, big truncated cone having 2/3(1/3) volume and small truncated cone having the remainder 1/3(1/3) volume. Ofc in building the 3d objects, the circumference will have to be involved to get a good visual.</p>
+  <p id="background2" class="math_involved_content" class="stuffs">Its not fair to grade me on the math here, this is solely the math on how to get the ratios approximate to make the shape created.</p>
+  
+    <!-- Add a container for Three.js -->
+    <div id="threejs-container"></div>
+
+    <!-- Add Three.js from a CDN -->
+    <!--Three.js cdn script-->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.122.0/build/three.min.js"></script>
+
+    <!-- OrbitControls cdn script-->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.122.0/examples/js/controls/OrbitControls.min.js"></script>
+
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./otherthings.js"></script>
+  </body>
+</html>
