@@ -180,12 +180,12 @@ mathStuff.onclick = function(){
    });*/
 
 
-let inputChange = 4.5;
+//let inputChange = 4.5;
 let inputSphereRadius = 1;
-const atrunc1bRad =  ((inputChange * inputSphereRadius) /(2 * 3.14 * inputSphereRadius));
+const atrunc1bRad =  ((inputSphereRadius) /(2 * 3.14 * inputSphereRadius));
 const atrunc1sRad = atrunc1bRad / 1.75;
 const atrunc1h = atrunc1sRad / atrunc1bRad;
-const atrunc2bRad =  ((1/2 * inputChange * inputSphereRadius) /(2 * 3.14 * inputSphereRadius));
+const atrunc2bRad =  ((1/2 * inputSphereRadius) /(2 * 3.14 * inputSphereRadius));
 const atrunc2sRad = atrunc2bRad / 1.75;
 const atrunc2h = .5 * (atrunc2sRad / atrunc2bRad);
 console.log(atrunc1bRad, atrunc1sRad, atrunc1h, atrunc2bRad, atrunc2sRad, atrunc2h);
