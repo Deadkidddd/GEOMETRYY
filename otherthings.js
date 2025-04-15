@@ -147,7 +147,7 @@ mathStuff.onclick = function(){
     number = number + 1;
 }
 
-   let gaveUp = document.getElementById("help");
+   /*let gaveUp = document.getElementById("help");
    let gaveUpText = document.getElementById("help_me_text");
 
    gaveUp.addEventListener("mouseover", function() {
@@ -177,7 +177,7 @@ mathStuff.onclick = function(){
    });
    gaveUp3.addEventListener("mouseout", function(){
     gaveUpText3.style.display="none";
-   });
+   });*/
 
 
 let inputChange = 4.5;
