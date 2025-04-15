@@ -184,10 +184,10 @@ mathStuff.onclick = function(){
 
 //let inputChange = 4.5;
 let inputSphereRadius = 4.5;
-const atrunc1bRad =  ((inputSphereRadius) /(2 * 3.14 * inputSphereRadius));
+const atrunc1bRad =  (inputSphereRadius * .5);
 const atrunc1sRad = atrunc1bRad / 1.75;
 const atrunc1h = atrunc1sRad / atrunc1bRad;
-const atrunc2bRad =  ((1/2 * inputSphereRadius) /(2 * 3.14 * inputSphereRadius));
+const atrunc2bRad =  (inputSphereRadius * .25);
 const atrunc2sRad = atrunc2bRad / 1.75;
 const atrunc2h = .5 * (atrunc2sRad / atrunc2bRad);
 console.log(atrunc1bRad, atrunc1sRad, atrunc1h, atrunc2bRad, atrunc2sRad, atrunc2h);
@@ -195,8 +195,17 @@ console.log(atrunc1bRad, atrunc1sRad, atrunc1h, atrunc2bRad, atrunc2sRad, atrunc
 //Volumes
 function volumeSurfaceArea(){
 const sphereVol = (4/3) * 3.14 * Math.pow(inputSphereRadius, 3);
-const trunc1Vol = (1/3 * (atrunc1h * 3.14 * (Math.pow(atrunc1bRad, 2) + atrunc1bRad * atrunc1sRad + Math.pow(atrunc1sRad, 2))));
-const trunc2Vol = (1/3 * (atrunc2h * 3.14 * (Math.pow(atrunc2bRad, 2) + atrunc2bRad * atrunc2sRad + Math.pow(atrunc2sRad, 2))));
+const trunc1Vol = (1/3) * Math.PI * atrunc1h * (
+    Math.pow(atrunc1bRad, 2) +
+    atrunc1bRad * atrunc1sRad +
+    Math.pow(atrunc1sRad, 2)
+);
+    const trunc2Vol = (1/3) * Math.PI * atrunc2h * (
+    Math.pow(atrunc2bRad, 2) +
+    atrunc2bRad * atrunc2sRad +
+    Math.pow(atrunc2sRad, 2)
+);
+    
 const totalVol = sphereVol + trunc1Vol + trunc2Vol;
 
 //Surface Areas
@@ -206,7 +215,7 @@ const sphereArea = (4 * 3.14 * Math.pow(inputSphereRadius, 2));
 const trunc1Area = ( 3.14 * (atrunc1bRad + atrunc1sRad) * l1 + 3.14 * (Math.pow(atrunc1bRad, 2) + Math.pow(atrunc1sRad, 2)));
 const trunc2Area = ( 3.14 * (atrunc2bRad + atrunc2sRad) * l2 + 3.14 * (Math.pow(atrunc2bRad, 2) + Math.pow(atrunc2sRad, 2)));
 const totalArea = sphereArea + trunc1Area + trunc2Area;
-input1.innerHTML = `Area: ${totalArea}, Volume: ${totalVol}, Individual Volumes: sphere: ${sphereVol}, big truncated cone: ${trunc2Vol}, small truncated cone: ${trunc1Vol};
+input1.innerHTML = `Area: ${totalArea}, Volume: ${totalVol}, Individual Volumes: sphere: ${sphereVol}, big truncated cone: ${trunc2Vol}, small truncated cone: ${trunc1Vol}`;
 }
 
    let inputa = document.getElementById("1inputa");
