@@ -198,9 +198,11 @@ const trunc2Vol = (1/3 * (atrunc2h * 3.14 * (Math.pow(atrunc2bRad, 2) + atrunc2b
 const totalVol = sphereVol + trunc1Vol + trunc2Vol;
 
 //Surface Areas
+let l1 = Math.sqrt(Math.pow(atrunc1sRad, 2)+Math.pow(atrunc1h, 2));
+let l2 = Math.sqrt(Math.pow(atrunc2sRad, 2)+Math.pow(atrunc2h, 2));
 const sphereArea = (4 * 3.14 * Math.pow(inputSphereRadius, 2));
-const trunc1Area = ( 3.14 * (atrunc1bRad + atrunc1sRad) * atrunc1h + 3.14 * (Math.pow(atrunc1bRad, 2) + Math.pow(atrunc1sRad, 2)));
-const trunc2Area = ( 3.14 * (atrunc2bRad + atrunc2sRad) * atrunc2h + 3.14 * (Math.pow(atrunc2bRad, 2) + Math.pow(atrunc2sRad, 2)));
+const trunc1Area = ( 3.14 * (atrunc1bRad + atrunc1sRad) * l1 + 3.14 * (Math.pow(atrunc1bRad, 2) + Math.pow(atrunc1sRad, 2)));
+const trunc2Area = ( 3.14 * (atrunc2bRad + atrunc2sRad) * l2 + 3.14 * (Math.pow(atrunc2bRad, 2) + Math.pow(atrunc2sRad, 2)));
 const totalArea = sphereArea + trunc1Area + trunc2Area;
 input1.innerHTML = `Area: ${totalArea}, Volume: ${totalVol}`;
 }
