@@ -14,8 +14,11 @@ container.appendChild(renderer.domElement);
 
 //const controls = new OrbitControls( camera, renderer.domElement)
 
-const material = new THREE.MeshStandardMaterial( { color: 0xc94444 } );
-
+let material = new THREE.MeshStandardMaterial( { color: 0xc00000 } );
+function changeColor(){
+setTimeout(function(){material = new THREE.MeshStandardMaterial( { color: 0xE6E6FA } );}, 2000);
+setTimeout(function(){material = new THREE.MeshStandardMaterial( { color: 0xc00000 } );}, 2000);
+}
 
 //definitions & coorelations
 let change = 4.5;
@@ -73,5 +76,7 @@ function animate() {
     sphere.rotation.y += 0.01;
     truncatedConeb.rotation.y += 0.01;
     truncatedCones.rotation.y += 0.01;
+    changeColor();
+    
   }
   renderer.setAnimationLoop( animate );
