@@ -17,9 +17,7 @@ container.appendChild(renderer.domElement);
 let material = new THREE.MeshStandardMaterial( { color: 0xc00000 } );
 function changeColor(){
 setTimeout(function(){material = new THREE.MeshStandardMaterial( { color: 0xE6E6FA } );}, 2000);
-console.log(material);
 setTimeout(function(){material = new THREE.MeshStandardMaterial( { color: 0xc00000 } );}, 2000);
-    console.log(material);
 }
 
 //definitions & coorelations
