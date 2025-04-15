@@ -126,12 +126,14 @@ function showMathText() {
     for (let mathStuffText of mathStuffTextElements) {
         mathStuffText.style.animation = "fadein 0.5s";
         mathStuffText.style.display = "block";
+        document.getElementById("btn").style.display = "block";
     }
 }
 function hideMathText() {
     for (let mathStuffText of mathStuffTextElements) {
         mathStuffText.style.animation = "fadeout 0.5s";
         mathStuffText.style.display = "none";
+        document.getElementById("btn").style.display = "block";
     }
 }
 
@@ -181,7 +183,7 @@ mathStuff.onclick = function(){
 
 
 //let inputChange = 4.5;
-let inputSphereRadius = 1;
+let inputSphereRadius = 4.5;
 const atrunc1bRad =  ((inputSphereRadius) /(2 * 3.14 * inputSphereRadius));
 const atrunc1sRad = atrunc1bRad / 1.75;
 const atrunc1h = atrunc1sRad / atrunc1bRad;
@@ -204,7 +206,7 @@ const sphereArea = (4 * 3.14 * Math.pow(inputSphereRadius, 2));
 const trunc1Area = ( 3.14 * (atrunc1bRad + atrunc1sRad) * l1 + 3.14 * (Math.pow(atrunc1bRad, 2) + Math.pow(atrunc1sRad, 2)));
 const trunc2Area = ( 3.14 * (atrunc2bRad + atrunc2sRad) * l2 + 3.14 * (Math.pow(atrunc2bRad, 2) + Math.pow(atrunc2sRad, 2)));
 const totalArea = sphereArea + trunc1Area + trunc2Area;
-input1.innerHTML = `Area: ${totalArea}, Volume: ${totalVol}`;
+input1.innerHTML = `Area: ${totalArea}, Volume: ${totalVol}, Individual Volumes: sphere: ${sphereVol}, big truncated cone: ${trunc2Vol}, small truncated cone: ${trunc1Vol};
 }
 
    let inputa = document.getElementById("1inputa");
@@ -212,7 +214,6 @@ input1.innerHTML = `Area: ${totalArea}, Volume: ${totalVol}`;
    let btn = document.getElementById("btn");
    
    btn.onclick = function() {
-    input1.style.display = "block";
     
     let userstr = inputa.value; // get the string value from input
     let userNumb = parseFloat(userstr); // convert it to a float
