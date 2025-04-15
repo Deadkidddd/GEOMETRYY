@@ -243,5 +243,5 @@ inputa.addEventListener("keypress", function(event) {
       event.preventDefault();
       
       // Trigger the button element with a click
-      btn.click();
+      btn.onclick();
       }});
