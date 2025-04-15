@@ -175,51 +175,9 @@
     left: 65%;
     top: 60%;
 }
-
-
-.help_me{
-    color: red;
-}
-
-#help_me_text{
-    display: none;
-    top: 65%;
-    left: 20%;
-    position: absolute;
-    z-index: 4;
-    width: 6%;
-    height: 10%;
-    background-color: black;
-    border: 2px solid red;
-    font-size: 10px;
-}
-
-#help_me_text2{
-    display: none;
-    top: 65%;
-    left: 28%;
-    position: absolute;
-    z-index: 4;
-    width: 6%;
-    height: 15%;
-    background-color: black;
-    border: 2px solid red;
-    font-size: 10px;
-    color: white;
-}
-
-#help_me_text3{
-    display: none;
-    top: 65%;
-    left: 30%;
-    position: absolute;
-    z-index: 4;
-    width: 6%;
-    height: 15%;
-    background-color: black;
-    border: 2px solid red;
-    font-size: 10px;
-    color: red;
+#stuff4{
+    left: 65%;
+    top: 80%;
 }
 
 .inputs{
