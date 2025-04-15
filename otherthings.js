@@ -127,13 +127,17 @@ function showMathText() {
         mathStuffText.style.animation = "fadein 0.5s";
         mathStuffText.style.display = "block";
         document.getElementById("btn").style.display = "block";
+        document.getElementById("inputa").style.display = "block";
+        document.getElementById("input1").style.display = "block";
     }
 }
 function hideMathText() {
     for (let mathStuffText of mathStuffTextElements) {
         mathStuffText.style.animation = "fadeout 0.5s";
         mathStuffText.style.display = "none";
-        document.getElementById("btn").style.display = "block";
+        document.getElementById("btn").style.display = "none";
+        document.getElementById("inputa").style.display = "none";
+        document.getElementById("input1").style.display = "none";
     }
 }
 
