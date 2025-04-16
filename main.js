@@ -81,11 +81,9 @@ scene.add( hemiLight);
 
 function animate() {
     renderer.render( scene, camera );
-
+    changeColor;
     sphere.rotation.y += 0.01;
     truncatedConeb.rotation.y += 0.01;
     truncatedCones.rotation.y += 0.01;
-    changeColor;
-    
   }
   renderer.setAnimationLoop( animate );
