@@ -14,8 +14,9 @@ container.appendChild(renderer.domElement);
 
 //const controls = new OrbitControls( camera, renderer.domElement)
 
-let material = new THREE.MeshStandardMaterial( { color: 0x000000 } );
+let material;
 function changeColor(){
+setTimeout(function(){material = new THREE.MeshStandardMaterial( { color: 0x000000 } );}, 1000);
 setTimeout(function(){material = new THREE.MeshStandardMaterial( { color: 0xE6E6FA } );}, 2000);
 setTimeout(function(){material = new THREE.MeshStandardMaterial( { color: 0x9D00FF } );}, 4000);
 }
