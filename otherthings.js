@@ -222,7 +222,7 @@ const base1Area = Math.PI * Math.pow(atrunc1bRad, 2); // base of truncated cone 
 const base2Area = Math.PI * Math.pow(atrunc2bRad, 2); // base of truncated cone 2
 
 // Calculate total area, excluding the big radii base areas
-const totalArea = sphereArea + (trunc1Area - base1Area) + (trunc2Area - base2Area);
+const totalArea = sphereArea + trunc1Area + trunc2Area - 2 * (base1Area + base2Area);
 input1.innerHTML = `Area: ${totalArea.toFixed(2)}, Volume: ${totalVol.toFixed(2)}`;
 }
 
