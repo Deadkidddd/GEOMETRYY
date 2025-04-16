@@ -187,7 +187,7 @@ mathStuff.onclick = function(){
 
 
 //let inputChange = 4.5;
-let inputSphereRadius = 4.5;
+let inputSphereRadius = 4.61;
 const atrunc1bRad =  (inputSphereRadius * .5);
 const atrunc1sRad = atrunc1bRad / 1.75;
 const atrunc1h = atrunc1bRad * 1.2;
