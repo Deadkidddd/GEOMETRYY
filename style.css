@@ -169,12 +169,12 @@
 
 #inputa{
     display: none;
-    top: 70%;
+    top: 75%;
     left: 36%;
     position: absolute;
     z-index: 4;
     width: 6%;
-    height: 40%;
+    height: 4%;
     font-size: 10px;
 }
 
