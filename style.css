@@ -103,7 +103,7 @@
     margin-bottom: 5%;
     width: 30%;
     text-align: center;
-    font-size: 10px;
+    font-size: 15px;
     color: red;
 }
 
@@ -151,15 +151,15 @@
 }
 #stuff2{
     left: 65%;
-    top: 30%;
+    top: 60%;
 }
 #stuff3{
     left: 65%;
-    top: 50%;
+    top: 80%;
 }
 #stuff4{
-    left: 65%;
-    top: 80%;
+    left: 35%;
+    top: 56%;
 }
 
 .inputs{
@@ -170,7 +170,7 @@
 #inputa{
     display: none;
     top: 65%;
-    left: 77%;
+    left: 35%;
     position: absolute;
     z-index: 4;
     width: 6%;
@@ -182,7 +182,7 @@
 #btn{
     display: none;
     top: 70%;
-    left: 77%;
+    left: 35%;
     position: absolute;
     z-index: 4;
     width: 6%;
@@ -193,7 +193,7 @@
 #input1{
     display: none;
     top: 72%;
-    left: 75%;
+    left: 35%;
     position: absolute;
     z-index: 4;
     width: 10%;
