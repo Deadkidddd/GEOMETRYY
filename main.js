@@ -14,20 +14,7 @@ container.appendChild(renderer.domElement);
 
 //const controls = new OrbitControls( camera, renderer.domElement)
 
-let mesh = new THREE.MeshStandardMaterial({ color: 0x000000});
-function changeColor(mesh) {
-    setTimeout(function() {
-        mesh.material.color.set(0xE29CD2);
-    }, 1000);
-
-    setTimeout(function() {
-        mesh.material.color.set(0xE6E6FA);
-    }, 2000);
-
-    setTimeout(function() {
-        mesh.material.color.set(0x9D00FF);
-    }, 4000);
-}
+let material = new THREE.MeshStandardMaterial({ color: 0x000000});
 
 //definitions & coorelations
 let change = 4.5;
@@ -56,18 +43,18 @@ console.log(sphereArea, trunc1Area, trunc2Area, "total Area:", totalArea);
 
 //Sphere
 const geoSphere = new THREE.SphereGeometry(sphereRadius);
-const sphere = new THREE.Mesh( geoSphere, mesh );
+const sphere = new THREE.Mesh( geoSphere, material );
 
 
 //Truncated Cone
 const geoTruncatedConeb = new THREE.CylinderGeometry( trunc1sRad, trunc1bRad, trunc1h, 32 );
-const truncatedConeb = new THREE.Mesh( geoTruncatedConeb, mesh );
+const truncatedConeb = new THREE.Mesh( geoTruncatedConeb, material );
 truncatedConeb.scale.y = -sphereRadius;
 truncatedConeb.position.y = -0.85;
 
 //Truncated Cone smaller
 const geoTruncatedCones = new THREE.CylinderGeometry( trunc2sRad, trunc2bRad, trunc2h, 32 );
-const truncatedCones = new THREE.Mesh( geoTruncatedCones, mesh );
+const truncatedCones = new THREE.Mesh( geoTruncatedCones, material );
 truncatedCones.position.y = .95;
 
 //scene add objects;
@@ -81,9 +68,9 @@ scene.add( hemiLight);
 
 function animate() {
     renderer.render( scene, camera );
-    changeColor;
     sphere.rotation.y += 0.01;
     truncatedConeb.rotation.y += 0.01;
     truncatedCones.rotation.y += 0.01;
   }
   renderer.setAnimationLoop( animate );
+   
