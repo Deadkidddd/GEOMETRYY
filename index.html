@@ -59,7 +59,16 @@ const trunc1Vol = (1/3) * Math.PI * atrunc1h * (
     Math.pow(atrunc2sRad, 2)
 );</span> //Love how I started this to explain the code, no sane person is gonna look at this lmao.
   </p>
-  <p id="stuff3" class="math_involved_content" class="stuffs"></p> 
+  <p id="stuff3" class="math_involved_content" class="stuffs">
+    //Surface Areas
+let l1 = Math.sqrt(Math.pow(atrunc1sRad, 2)+Math.pow(atrunc1h, 2));
+let l2 = Math.sqrt(Math.pow(atrunc2sRad, 2)+Math.pow(atrunc2h, 2));
+const sphereArea = (4 * 3.14 * Math.pow(inputSphereRadius, 2));
+const trunc1Area = ( 3.14 * (atrunc1bRad + atrunc1sRad) * l1 + 3.14 * (Math.pow(atrunc1bRad, 2) + Math.pow(atrunc1sRad, 2)));
+const trunc2Area = ( 3.14 * (atrunc2bRad + atrunc2sRad) * l2 + 3.14 * (Math.pow(atrunc2bRad, 2) + Math.pow(atrunc2sRad, 2)));
+const base1Area = Math.PI * Math.pow(atrunc1bRad, 2); // base of truncated cone 1
+const base2Area = Math.PI * Math.pow(atrunc2bRad, 2); // base of truncated cone 2
+  </p> 
   <p id="stuff4" class="math_involved_content" class="stuffs">So if going by it this way you can mess with the value of the spheres radius to get a bigger volume but smaller surface area</p>
   <label id="inputa" class="math_involved_content" class="stuffs" class="inputs"><p><input type="number" id="1inputa"></p></label><button id="btn" class="math_involved_content" class="stuffs" class="inputs">Submit</button>
   <p id="input1" class="stuffs">HI</p>
