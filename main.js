@@ -18,7 +18,7 @@ let material = new THREE.MeshStandardMaterial( { color: 0x000000 } );
 function changeColor(){
 setTimeout(function(){material = new THREE.MeshStandardMaterial( { color: 0xE6E6FA } );}, 2000);
 setTimeout(function(){material = new THREE.MeshStandardMaterial( { color: 0x9D00FF } );}, 4000);
-};
+}
 
 //definitions & coorelations
 let change = 4.5;
@@ -76,7 +76,7 @@ function animate() {
     sphere.rotation.y += 0.01;
     truncatedConeb.rotation.y += 0.01;
     truncatedCones.rotation.y += 0.01;
-    changeColor();
+    changeColor;
     
   }
   renderer.setAnimationLoop( animate );
