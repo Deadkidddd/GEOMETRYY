@@ -85,7 +85,7 @@ function animate() {
     sphere.rotation.y += 0.01;
     truncatedConeb.rotation.y += 0.01;
     truncatedCones.rotation.y += 0.01;
-    changeColor();
+    changeColor(Mesh);
     
   }
   renderer.setAnimationLoop( animate );
