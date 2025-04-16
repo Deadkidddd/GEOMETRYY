@@ -37,11 +37,13 @@
 
   <!--Math for displaying shape-->
   <p id="stuff" class="math_involved_content" class="stuffs">let inputSphereRadius = 4.5;
-const atrunc1bRad =  (inputSphereRadius * .5); //Since I dont want the full sphere radius, I gambled and put 1/2 or .5
-const atrunc1h = atrunc1sRad / atrunc1bRad; //The height is as such to create 
-const atrunc2bRad =  (inputSphereRadius * .25);
-const atrunc2sRad = atrunc2bRad / 1.75;
-const atrunc2h = .5 * (atrunc2sRad / atrunc2bRad);</p>
+const atrunc1bRad =  (inputSphereRadius * .5); //Since I dont want the full sphere radius, I gambled and put 1/2 or .5 to created a more fitting big radius for my wants
+const atrunc1sRad = atrunc1bRad / 1.75; //1.75 derives from how much difference I want between radius b and radius s. Doing it by hand I gambled 1, or 2 times the diviviter of radius b, but when coding in the shape, 1.75 matched my wants better so I coded it in.
+const atrunc1h = atrunc1sRad / atrunc1bRad; //The height is as such to create a consistent height when the sphere radius is altered. Just so you know I actually can do the math if I'm not sleep deprived, you can hover 'example'.
+const atrunc2bRad =  (inputSphereRadius * .25); //.25 is 1/2 of .5. In fact with my own equation(that still worked just was overcomplicated). ((1/2 * change * sphereRadius) /(2 * 3.14 * sphereRadius)), the 1/2 displayed .25 with change showing the differental(you are so lucky I ran this through chatgpt to simplify it)
+const atrunc2sRad = atrunc2bRad / 1.75; //Important to note the use of 1.75 does not make the small radius equal to the small radius of the other truncated cone. Using trunc2B switches the value to make the same differental of the bigger cone. (idk if differental is the right word but i'm not trying to find that answer lmao)
+const atrunc2h = .5 * (atrunc2sRad / atrunc2bRad);//And lastly, the last truncated cone height. 1/2 of the, fuk the cofefefe is wearing off, anyways to find the height we cut the originals in half. These steps would make backtracking and going from volume to each element take a lot of guessing, hence why I went ahead and added the Surface areas and Volumes needed to this code. 
+  </p>
   <p id="stuff2" class="math_involved_content" class="stuffs"></p>
   <p id="stuff3" class="math_involved_content" class="stuffs"></p> 
   <p id="stuff4" class="math_involved_content" class="stuffs">So if going by it this way you can mess with the value of the spheres radius to get a bigger volume but smaller surface area</p>
