@@ -52,7 +52,7 @@ const trunc1Vol = (1/3) * Math.PI * atrunc1h * (
     Math.pow(atrunc1bRad, 2) +
     atrunc1bRad * atrunc1sRad +
     Math.pow(atrunc1sRad, 2)
-);</span><span style="color: yellow;"> //The volume of a truncated cone is really long lmao, something like 1/3(pi * h(r^2 +(r*R)+ R^2)), and smh I remembered that, but yea long equation which fun fact in code it derives from a cylinder in three.js</span><br>
+);</span><span style="color: yellow;"> //The volume of a truncated cone is really long lmao, something like 1/3(pi * h(r^2 +(r*R)+ R^2)), and smh I remembered that, but yea long equation which random fact, in code it derives from a cylinder in three.js</span><br>
     <span style="color: white;">const trunc2Vol = (1/3) * Math.PI * atrunc2h * (
     Math.pow(atrunc2bRad, 2) +
     atrunc2bRad * atrunc2sRad +
@@ -61,13 +61,13 @@ const trunc1Vol = (1/3) * Math.PI * atrunc1h * (
   </p>
   <p id="stuff3" class="math_involved_content" class="stuffs">
     //Surface Areas
-let l1 = Math.sqrt(Math.pow(atrunc1sRad, 2)+Math.pow(atrunc1h, 2));
-let l2 = Math.sqrt(Math.pow(atrunc2sRad, 2)+Math.pow(atrunc2h, 2));
-const sphereArea = (4 * 3.14 * Math.pow(inputSphereRadius, 2));
-const trunc1Area = ( 3.14 * (atrunc1bRad + atrunc1sRad) * l1 + 3.14 * (Math.pow(atrunc1bRad, 2) + Math.pow(atrunc1sRad, 2)));
-const trunc2Area = ( 3.14 * (atrunc2bRad + atrunc2sRad) * l2 + 3.14 * (Math.pow(atrunc2bRad, 2) + Math.pow(atrunc2sRad, 2)));
-const base1Area = Math.PI * Math.pow(atrunc1bRad, 2); // base of truncated cone 1
-const base2Area = Math.PI * Math.pow(atrunc2bRad, 2); // base of truncated cone 2
+<span style="color: white;">let l1 = Math.sqrt(Math.pow(atrunc1sRad, 2)+Math.pow(atrunc1h, 2));</span><span style="color: yellow;">//l1 is the slanted height of truncated cone 1, which is the big cone it square roots the small radius ^ 2 + the height ^ 2.</span><br>
+<span style="color: white;">let l2 = Math.sqrt(Math.pow(atrunc2sRad, 2)+Math.pow(atrunc2h, 2));</span>l2 is the slanted height of truncated cone 2, which is the small cone, it square roots the small radius ^ 2 + the height ^ 2.<br>
+<span style="color: white;">const sphereArea = (4 * 3.14 * Math.pow(inputSphereRadius, 2));</span><span style="color: yellow;">4 * pi * sphereRadius ^ 2, the surface area formula</span><br>
+<span style="color: white;">const trunc1Area = ( 3.14 * (atrunc1bRad + atrunc1sRad) * l1 + 3.14 * (Math.pow(atrunc1bRad, 2) + Math.pow(atrunc1sRad, 2)));</span>Its the truncated cone surface area formula<br>
+<span style="color: white;">const trunc2Area = ( 3.14 * (atrunc2bRad + atrunc2sRad) * l2 + 3.14 * (Math.pow(atrunc2bRad, 2) + Math.pow(atrunc2sRad, 2)));</span><span style="color: yellow;">Another truncated cone surface area formula(why do I be picking the most long equationed shapes possible)</span><br>
+<span style="color: white;">const base1Area = 3.14 * Math.pow(atrunc1bRad, 2); // base of truncated cone 1</span>The bases need to be defined, to be able to subtract from total surface area so that space where the surfaces are connected will have that missing area (Im tired I can not type lmao)<br>
+<span style="color: white;">const base2Area = 3.14 * Math.pow(atrunc2bRad, 2); // base of truncated cone 2</span><span style="color: yellow;"></span><br>
   </p> 
   <p id="stuff4" class="math_involved_content" class="stuffs">So if going by it this way you can mess with the value of the spheres radius to get a bigger volume but smaller surface area</p>
   <label id="inputa" class="math_involved_content" class="stuffs" class="inputs"><p><input type="number" id="1inputa"></p></label><button id="btn" class="math_involved_content" class="stuffs" class="inputs">Submit</button>
