@@ -147,11 +147,11 @@
 
 #stuff{
     left: 65%;
-    top: 10%;
+    top: 5%;
 }
 #stuff2{
     left: 65%;
-    top: 60%;
+    top: 70%;
 }
 #stuff3{
     left: 65%;
@@ -169,8 +169,8 @@
 
 #inputa{
     display: none;
-    top: 65%;
-    left: 35%;
+    top: 70%;
+    left: 36%;
     position: absolute;
     z-index: 4;
     width: 6%;
@@ -181,8 +181,8 @@
 
 #btn{
     display: none;
-    top: 70%;
-    left: 35%;
+    top: 78%;
+    left: 36%;
     position: absolute;
     z-index: 4;
     width: 6%;
@@ -192,8 +192,8 @@
 
 #input1{
     display: none;
-    top: 72%;
-    left: 35%;
+    top: 80%;
+    left: 36%;
     position: absolute;
     z-index: 4;
     width: 10%;
