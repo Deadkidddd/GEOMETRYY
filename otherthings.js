@@ -190,10 +190,10 @@ mathStuff.onclick = function(){
 let inputSphereRadius = 4.5;
 const atrunc1bRad =  (inputSphereRadius * .5);
 const atrunc1sRad = atrunc1bRad / 1.75;
-const atrunc1h = atrunc1sRad / atrunc1bRad;
+const atrunc1h = atrunc1bRad * 1.2;
 const atrunc2bRad =  (inputSphereRadius * .25);
 const atrunc2sRad = atrunc2bRad / 1.75;
-const atrunc2h = .5 * (atrunc2sRad / atrunc2bRad);
+const atrunc2h = atrunc2bRad * 1.2;
 console.log(atrunc1bRad, atrunc1sRad, atrunc1h, atrunc2bRad, atrunc2sRad, atrunc2h);
 
 //Volumes
@@ -223,7 +223,7 @@ const base2Area = Math.PI * Math.pow(atrunc2bRad, 2); // base of truncated cone 
 
 // Calculate total area, excluding the big radii base areas
 const totalArea = sphereArea + (trunc1Area - base1Area) + (trunc2Area - base2Area);
-input1.innerHTML = `Area: ${totalArea}, Volume: ${totalVol}`;
+input1.innerHTML = `Area: ${totalArea.toFixed(2)}, Volume: ${totalVol.toFixed(2)}`;
 }
 
    let inputa = document.getElementById("1inputa");
