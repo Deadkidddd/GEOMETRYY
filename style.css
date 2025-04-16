@@ -86,6 +86,7 @@
     left: 36.5%;
     width: 30%;
     text-align: center;
+    color: red;
 }
 #sa_area_diff{
     top: 35%;
@@ -103,6 +104,7 @@
     width: 30%;
     text-align: center;
     font-size: 20px;
+    color: red;
 }
 
 
