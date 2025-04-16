@@ -170,7 +170,7 @@
 
 #inputa{
     display: none;
-    top: 75%;
+    top: 62%;
     left: 36%;
     position: absolute;
     z-index: 4;
@@ -182,7 +182,7 @@
 
 #btn{
     display: none;
-    top: 78%;
+    top: 65%;
     left: 36%;
     position: absolute;
     z-index: 4;
@@ -193,7 +193,7 @@
 
 #input1{
     display: none;
-    top: 80%;
+    top: 70%;
     left: 36%;
     position: absolute;
     z-index: 4;
