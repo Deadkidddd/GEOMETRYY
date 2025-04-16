@@ -14,7 +14,7 @@ container.appendChild(renderer.domElement);
 
 //const controls = new OrbitControls( camera, renderer.domElement)
 
-let material = new THREE.MeshStandardMaterial({ color: 0x000000});
+let mesh = new THREE.MeshStandardMaterial({ color: 0x000000});
 function changeColor(mesh) {
     setTimeout(function() {
         mesh.material.color.set(0xE29CD2);
@@ -56,18 +56,18 @@ console.log(sphereArea, trunc1Area, trunc2Area, "total Area:", totalArea);
 
 //Sphere
 const geoSphere = new THREE.SphereGeometry(sphereRadius);
-const sphere = new THREE.Mesh( geoSphere, material );
+const sphere = new THREE.Mesh( geoSphere, mesh );
 
 
 //Truncated Cone
 const geoTruncatedConeb = new THREE.CylinderGeometry( trunc1sRad, trunc1bRad, trunc1h, 32 );
-const truncatedConeb = new THREE.Mesh( geoTruncatedConeb, material );
+const truncatedConeb = new THREE.Mesh( geoTruncatedConeb, mesh );
 truncatedConeb.scale.y = -sphereRadius;
 truncatedConeb.position.y = -0.85;
 
 //Truncated Cone smaller
 const geoTruncatedCones = new THREE.CylinderGeometry( trunc2sRad, trunc2bRad, trunc2h, 32 );
-const truncatedCones = new THREE.Mesh( geoTruncatedCones, material );
+const truncatedCones = new THREE.Mesh( geoTruncatedCones, mesh );
 truncatedCones.position.y = .95;
 
 //scene add objects;
