@@ -63,7 +63,7 @@ async function showWhyText() {
             whyText.style.animation = "fadein 0.5s";
             whyText.style.display = "block";
             whyText.style.top = "40%"; // Set the initial top position to 40%
-            await delay(5000); // Wait for 5 seconds before showing the next element
+            await delay(3000); // Wait for 3 seconds before showing the next element
             change(whyText, "absolute", "20px", "blue");
             changeTop(whyText, topOffset);
             topOffset += 5; // Increment topOffset for the next element
