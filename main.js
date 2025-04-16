@@ -14,10 +14,10 @@ container.appendChild(renderer.domElement);
 
 //const controls = new OrbitControls( camera, renderer.domElement)
 
-let material;
+let material = new THREE.MeshStandardMaterial({ color: 0x000000});
 function changeColor(mesh) {
     setTimeout(function() {
-        mesh.material.color.set(0x000000);
+        mesh.material.color.set(0xE29CD2);
     }, 1000);
 
     setTimeout(function() {
