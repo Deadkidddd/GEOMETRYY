@@ -40,14 +40,14 @@
 <span style="color: white;">const atrunc1bRad =  (inputSphereRadius * .5);</span> //Since I dont want the full sphere radius, I gambled and put 1/2 or .5 to created a more fitting big radius for my wants<br>
 <span style="color: white;">const atrunc1sRad = atrunc1bRad / 1.75;</span><span style="color: yellow;"> //1.75 derives from how much difference I want between radius b and radius s. Doing it by hand I gambled 1, or 2 times the diviviter of radius b, but when coding in the shape, 1.75 matched my wants better so I coded it in.</span><br>
 <span style="color: white;">const atrunc1h = atrunc1bRad * 1.2;</span> //The height is as such to create a consistent height when the sphere radius is altered. Calling the correlated radii and then multiplying by a proprtion allows the height to fluctuate with radius while also giving the computer a reliable number to do math with<br>
-<span style="color: white;">const atrunc2bRad =  (inputSphereRadius * .25);</span><span style="color: yellow;"> //.25 is 1/2 of .5. In fact with my own equation(that still worked just was overcomplicated). ((1/2 * change * sphereRadius) /(2 * 3.14 * sphereRadius)), the 1/2 displayed .25 with change showing the differental(you are so lucky I ran this through chatgpt to simplify it)</span><br>
-<span style="color: white;">const atrunc2sRad = atrunc2bRad / 1.75;</span> //Important to note the use of 1.75 does not make the small radius equal to the small radius of the other truncated cone. Using trunc2B switches the value to make the same differental of the bigger cone. (idk if differental is the right word but i'm not trying to find that answer lmao)<br>
+<span style="color: white;">const atrunc2bRad =  (inputSphereRadius * .25);</span><span style="color: yellow;"> //.25 is 1/2 of .5. With my earlier equation(that still worked just was overcomplicated). ((1/2 * change * sphereRadius) /(2 * 3.14 * sphereRadius)), the 1/2 displayed the divide with the prior equation resulting in .25 when change would equal 4.5 and sphere was 1(you are so lucky I ran this through chatgpt to simplify it)</span><br>
+<span style="color: white;">const atrunc2sRad = atrunc2bRad / 1.75;</span> //Important to note the use of 1.75 does not make the small radius equal to the small radius of the other truncated cone. Using trunc2B switches the value to make the same differental of the bigger cone. (idk if differental is the right word but I dont care too much about grammar)<br>
 <span style="color: white;">const atrunc2h = atrunc2bRad * 1.2;</span><span style="color: yellow;"> //And lastly, the last truncated cone height, which takes the big radius and multiplies a a proportion to get a value that is able to be of use.</span><br> 
   </p>
   <p id="stuff2" class="math_involved_content" class="stuffs">
     //Volumes
 function volumeSurfaceArea(){
-<span style="color: white;">const sphereVol = (4/3) * 3.14 * Math.pow(inputSphereRadius, 3);</span> //The volume of sphere, also so silly how its Math.pow to get the power of a number lmao<br><span style="color: floral-white;">
+<span style="color: white;">const sphereVol = (4/3) * 3.14 * Math.pow(inputSphereRadius, 3);</span> //The volume of sphere, also so silly how its Math.pow to get the power of a number lmao<br><span style="color: white;">
 const trunc1Vol = (1/3) * Math.PI * atrunc1h * (
     Math.pow(atrunc1bRad, 2) +
     atrunc1bRad * atrunc1sRad +
