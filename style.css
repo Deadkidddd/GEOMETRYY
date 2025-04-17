@@ -181,7 +181,6 @@
 #btn{
     display: none;
     top: 59%;
-    left: 36%;
     position: absolute;
     z-index: 4;
     width: 4%;
@@ -192,7 +191,6 @@
 #input1{
     display: none;
     top: 60%;
-    left: 36%;
     position: absolute;
     z-index: 4;
     width: 7%;
