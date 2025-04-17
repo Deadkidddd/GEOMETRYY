@@ -174,13 +174,14 @@
 }
 
 #1inputa{
-    width: 50%;
+    width: 100%;
     height: 100%;
 }
 
 #btn{
     display: none;
     top: 59%;
+    left: 45%;
     position: absolute;
     z-index: 4;
     width: 4%;
@@ -192,6 +193,7 @@
     display: none;
     top: 60%;
     position: absolute;
+    left: 40%;
     z-index: 4;
     width: 7%;
     height: 10%;
