@@ -163,18 +163,19 @@
     top: 67%;
 }
 
-.inputs{
-    display: none;
-    position: absolute;
-    width: 1%;
-    height: 4%;
+#inputa{
     display: none;
     top: 56%;
-    left: 50%;
+    left: 36%;
     position: absolute;
     z-index: 4;
     font-size: 10px;
-    
+    max-width: 4%;
+}
+
+#1inputa{
+    width: 50%;
+    height: 100%;
 }
 
 #btn{
