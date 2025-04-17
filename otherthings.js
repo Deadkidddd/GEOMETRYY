@@ -226,7 +226,7 @@ const totalArea = sphereArea + trunc1Area + trunc2Area - 2 * (base1Area + base2A
 input1.innerHTML = `Area: ${totalArea.toFixed(2)}, Volume: ${totalVol.toFixed(2)}`;
 }
 
-   let inputa = document.getElementById("1inputa");
+   let inputa = document.getElementById("one_inputa");
    let input1 = document.getElementById("input1");
    let btn = document.getElementById("btn");
    
