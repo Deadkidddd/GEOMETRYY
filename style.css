@@ -129,7 +129,7 @@
     left: 36%;
 }
 #math_involved5{
-    top: 55%;
+    top: 53%;
     right: 36%;
     left: 36%;
 }
@@ -170,7 +170,7 @@
 
 #inputa{
     display: none;
-    top: 55%;
+    top: 56%;
     left: 36%;
     position: absolute;
     z-index: 4;
@@ -184,7 +184,7 @@
 
 #btn{
     display: none;
-    top: 58%;
+    top: 59%;
     left: 36%;
     position: absolute;
     z-index: 4;
