@@ -163,24 +163,22 @@
     top: 67%;
 }
 
-#input{
-    position: relative;
-    z-index: 4;
-    left: 50%;
-    max-width: 10%;
-}
-
 #inputa{
     display: none;
     top: 56%;
     position: absolute;
     font-size: 10px;
+    z-index: 4;
+    left: 50%;
+    max-width: 10%;
 }
 
-#1inputa{
+#one_inputa{
     position: absolute;
     place-self: center;
     height: 100%;
+    z-index: 4;
+    max-width: 10%;
 }
 
 #btn{
@@ -189,6 +187,9 @@
     position: absolute;
     height: 2%;
     font-size: 10px;
+    z-index: 4;
+    left: 50%;
+    max-width: 10%;
 }
 
 #input1{
