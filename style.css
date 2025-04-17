@@ -164,7 +164,7 @@
 }
 
 #input{
-    position: absolute;
+    position: relative;
     z-index: 4;
     left: 50%;
     max-width: 10%;
