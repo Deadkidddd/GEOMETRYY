@@ -199,6 +199,9 @@
     background-color: red;
     border: 1px solid black;
     color: black;
+    z-index: 4;
+    left: 50%;
+    max-width: 10%;
 }
 
 @keyframes fadein{
