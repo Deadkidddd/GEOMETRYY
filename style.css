@@ -179,7 +179,7 @@
     left: 45%;
     height: 100%;
     z-index: 4;
-    max-width: 100%;
+    max-width: 80%;
 }
 
 #btn{
@@ -214,7 +214,7 @@
     left: 50%;
     color: red;
     z-index: 4;
-    top: 56%;
+    top: 54%;
 }
 
 @keyframes fadein{
