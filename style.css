@@ -179,7 +179,7 @@
     left: 45%;
     height: 100%;
     z-index: 4;
-    max-width: 10%;
+    max-width: 100%;
 }
 
 #btn{
