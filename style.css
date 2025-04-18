@@ -213,6 +213,8 @@
     width: 10%;
     left: 50%;
     color: red;
+    z-index: 4;
+    top: 56%;
 }
 
 @keyframes fadein{
