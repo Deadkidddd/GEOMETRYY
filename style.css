@@ -206,6 +206,14 @@
     max-width: 10%;
     top: 60%;
 }
+#giveupfr{
+    display: none;
+    position: absolute;
+    height: 3%;
+    width: 10%;
+    left: 50%;
+    color: red;
+}
 
 @keyframes fadein{
     0%{
