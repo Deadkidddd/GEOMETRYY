@@ -169,7 +169,7 @@
     position: absolute;
     font-size: 10px;
     z-index: 4;
-    left: 44%;
+    left: 48%;
     max-width: 4%;
     height: 3%;
 }
@@ -183,7 +183,7 @@
 
 #btn{
     display: none;
-    top: 61%;
+    top: 62%;
     position: absolute;
     height: 2%;
     font-size: 10px;
