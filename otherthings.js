@@ -129,6 +129,7 @@ function showMathText() {
         document.getElementById("btn").style.display = "block";
         document.getElementById("inputa").style.display = "block";
         document.getElementById("input1").style.display = "block";
+        document.getElementById("giveupfr").style.display = "block";
     }
 }
 function hideMathText() {
@@ -138,6 +139,7 @@ function hideMathText() {
         document.getElementById("btn").style.display = "none";
         document.getElementById("inputa").style.display = "none";
         document.getElementById("input1").style.display = "none";
+        document.getElementById("giveupfr").style.display = "none";
     }
 }
 
