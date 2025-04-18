@@ -169,7 +169,7 @@
     position: absolute;
     font-size: 10px;
     z-index: 4;
-    left: 45%;
+    left: 40%;
     max-width: 4%;
     height: 3%;
 }
@@ -188,7 +188,7 @@
     height: 2%;
     font-size: 10px;
     z-index: 4;
-    left: 40%;
+    left: 45%;
     max-width: 10%;
 }
 
