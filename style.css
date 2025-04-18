@@ -170,13 +170,12 @@
     font-size: 10px;
     z-index: 4;
     left: 40%;
-    max-width: 5%;
+    max-width: 4%;
     height: 3%;
 }
 
 #one_inputa{
     position: absolute;
-    left: 45%;
     height: 100%;
     z-index: 4;
     max-width: 100%;
