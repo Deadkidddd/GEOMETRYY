@@ -216,6 +216,11 @@
     top: 54%;
 }
 
+#explain_btn{
+    position: absolute;
+    color: red;
+}
+
 #explain{
     display: none;
     position: absolute;
