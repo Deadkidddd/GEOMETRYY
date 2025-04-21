@@ -216,6 +216,14 @@
     top: 54%;
 }
 
+#explain{
+    display: none;
+    position: absolute;
+    background-transparency: 20%;
+    background-color: red;
+    z-index: 6;
+}
+
 @keyframes fadein{
     0%{
         display: none;
