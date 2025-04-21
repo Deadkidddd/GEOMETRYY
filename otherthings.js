@@ -255,3 +255,16 @@ inputa.addEventListener("keypress", function(event) {
       // Trigger the button element with a click
       btn.onclick();
       }});
+
+function showExplain(){
+document.getElementById("explain").style.display = "block";
+document.getElementById("explain").style.style.animation = "fadein 3s";
+}
+
+function hideExplain(){
+document.getElementById("explain").style.display = "none";
+}
+
+document.getElementById("explain_btn").onclick = function(){
+showExplain;
+};
