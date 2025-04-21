@@ -266,5 +266,12 @@ document.getElementById("explain").style.display = "none";
 }
 
 document.getElementById("explain_btn").onclick = function(){
-showExplain;
-};
+evenOrOdd();
+    if (numberType == `odd`){
+        showExplain();
+    }
+    if (numberType == `even`){
+        hideExplain();
+    }
+    number = number + 1;
+}
