@@ -228,7 +228,7 @@
     display: none;
     position: absolute;
     background-transparency: 20%;
-    background-color: dark-red;
+    background-color: black;
     z-index: 6;
 }
 
