@@ -256,6 +256,19 @@ inputa.addEventListener("keypress", function(event) {
       btn.onclick();
       }});
 
+//Number for even or odd to show/hide extra text because i overcomplicate things
+let numberExtra = 0; // Initialize the number variable
+let numberTypeE;
+
+function evenOrOddE() {
+    if (numberExtra %2 == 0) {
+        numberTypeE = "even";
+    }
+    else{
+        numberTypeE = "odd";
+    }
+};
+
 function showExplain(){
 document.getElementById("explain").style.display = "block";
 document.getElementById("explain").style.style.animation = "fadein 3s";
@@ -266,12 +279,12 @@ document.getElementById("explain").style.display = "none";
 }
 
 document.getElementById("explain_btn").onclick = function(){
-evenOrOdd();
-    if (numberType == `odd`){
+evenOrOddE();
+    if (numberTypeE == `odd`){
         showExplain();
     }
     if (numberType == `even`){
         hideExplain();
     }
-    number = number + 1;
+    numberExtra = numberExtra + 1;
 }
