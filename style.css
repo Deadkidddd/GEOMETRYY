@@ -227,9 +227,10 @@
 #explain{
     display: none;
     position: absolute;
-    background-opacity: 90%;
-    background-color: Black;
+    background-opacity: 50%;
+    background-color: DarkSalmon;
     z-index: 6;
+    top: 0;
 }
 
 @keyframes fadein{
