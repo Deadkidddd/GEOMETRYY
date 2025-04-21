@@ -221,13 +221,14 @@
     position: absolute;
     color: red;
     z-index: 7;
+    top: 60%;
 }
 
 #explain{
     display: none;
     position: absolute;
     background-transparency: 20%;
-    background-color: red;
+    background-color: dark-red;
     z-index: 6;
 }
 
