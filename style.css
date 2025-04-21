@@ -217,8 +217,10 @@
 }
 
 #explain_btn{
+    display: none;
     position: absolute;
     color: red;
+    z-index: 7;
 }
 
 #explain{
