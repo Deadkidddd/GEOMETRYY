@@ -26,7 +26,7 @@
     color: red;
     font-size: 20px;
     display: none;
-    z-index: 3;
+    z-index: 21;
 }
 
 #dm_one{
@@ -43,7 +43,7 @@
     top: 35%;
     width: 25%;
     height: 75%;
-    z-index: 2;
+    z-index: 21;
 }
 
 .changes_why_content{
