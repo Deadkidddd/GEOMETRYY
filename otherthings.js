@@ -149,7 +149,6 @@ mathStuff.onclick = function(){
     evenOrOdd();
     if (numberType == "even") {
         showMathText();
-        console.log("clicked");
     }
     else{
         hideMathText();
@@ -285,7 +284,7 @@ evenOrOddE();
     if (numberTypeE == `odd`){
         showExplain();
     }
-    if (numberType == `even`){
+    if (numberTypeE == `even`){
         hideExplain();
     }
     numberExtra = numberExtra + 1;
