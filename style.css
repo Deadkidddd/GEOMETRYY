@@ -231,6 +231,8 @@
     background-color: DarkSalmon;
     z-index: 6;
     top: 0;
+    height: 100%;
+    font-size: 30px;
 }
 
 @keyframes fadein{
