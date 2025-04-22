@@ -42,14 +42,14 @@ if(numberTypeBar == `odd`){
         nav.style.animation = "fadein 0.5s";
         nav.style.display = "block";
     }
-    numberBar = numberBar + 1;
 }
 if(numberTypeBar == `even`){
     for (let nav of navElements) {
         nav.style.animation = "fadeout 0.5s";
         nav.style.display = "none";}
+}
     numberBar = numberBar + 1;
-}};
+};
 
 navBtn.addEventListener("mouseover", function() {
     for (let nav of navElements) {
