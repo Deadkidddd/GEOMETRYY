@@ -154,10 +154,6 @@ function showMathText() {
         document.getElementById("input1").style.display = "block";
         document.getElementById("giveupfr").style.display = "block";
         document.getElementById("explain_btn").style.display = "block";
-        document.getElementById("stuff").style.display = "block";
-        document.getElementById("stuff2").style.display = "block";
-        document.getElementById("stuff3").style.display = "block";
-        document.getElementById("stuff4").style.display = "block";
     }
 }
 function hideMathText() {
@@ -169,10 +165,6 @@ function hideMathText() {
         document.getElementById("input1").style.display = "none";
         document.getElementById("giveupfr").style.display = "none";
         document.getElementById("explain_btn").style.display = "none";
-        document.getElementById("stuff").style.display = "block";
-        document.getElementById("stuff2").style.display = "block";
-        document.getElementById("stuff3").style.display = "block";
-        document.getElementById("stuff4").style.display = "block";
     }
 }
 
