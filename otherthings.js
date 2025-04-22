@@ -297,7 +297,7 @@ function evenOrOddE() {
 
 function showExplain(){
 document.getElementById("explain").style.display = "block";
-document.getElementById("explain").style.style.animation = "fadein 3s";
+document.getElementById("explain").style.animation = "fadein 3s";
 }
 
 function hideExplain(){
