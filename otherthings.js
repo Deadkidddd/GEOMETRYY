@@ -297,10 +297,12 @@ function evenOrOddE() {
 function showExplain(){
 document.getElementById("explain").style.display = "block";
 document.getElementById("explain").style.animation = "fadein 3s";
+document.getElementById("picture_of_my_cat").style.opacity = "15%";
 }
 
 function hideExplain(){
 document.getElementById("explain").style.display = "none";
+document.getElementById("picture_of_my_cat").style.opacity = "100%";
 }
 
 document.getElementById("explain_btn").onclick = function(){
