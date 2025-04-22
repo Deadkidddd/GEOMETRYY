@@ -154,7 +154,6 @@ function showMathText() {
         document.getElementById("input1").style.display = "block";
         document.getElementById("giveupfr").style.display = "block";
         document.getElementById("explain_btn").style.display = "block";
-        document.getElementById("explain").style.display = "block";
     }
 }
 function hideMathText() {
