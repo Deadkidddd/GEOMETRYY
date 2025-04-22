@@ -221,7 +221,9 @@
     position: absolute;
     color: red;
     z-index: 22;
-    top: 60%;
+    top: 15%;
+    width: 15%;
+    left: 45%;
 }
 
 #explain{
