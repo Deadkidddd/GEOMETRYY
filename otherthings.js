@@ -298,7 +298,7 @@ function showExplain(){
 document.getElementById("explain").style.display = "block";
 document.getElementById("explain").style.animation = "fadein 3s";
 document.getElementById("picture_of_my_cat").style.opacity = "15%";
-document.getElementById("dropdown_menu").style.background-color = "red";
+document.getElementById("dropdown_menu").style.changeBackground = "red";
 document.getElementById("dropdown_menu").style.opacity = "15%";
 }
 
