@@ -299,14 +299,14 @@ document.getElementById("explain").style.display = "block";
 document.getElementById("explain").style.animation = "fadein 3s";
 document.getElementById("picture_of_my_cat").style.opacity = "15%";
 document.getElementById("picture_of_my_cat").style.zIndex = "22";
-document.getElementById("dropdown_menu").style.backgroundColor = "red";
-document.getElementById("dropdown_menu").style.opacity = "15%";
+document.getElementById("dropdown_menu").style.backgroundColor = "Fuchsia";
+document.getElementById("dropdown_menu").style.opacity = "40%";
 }
 
 function hideExplain(){
 document.getElementById("explain").style.display = "none";
 document.getElementById("picture_of_my_cat").style.opacity = "100%";
-document.getElementById("dropdown_menu").style.opacity = "0%";
+document.getElementById("dropdown_menu").style.backgroundColor = "transparent";
 document.getElementById("picture_of_my_cat").style.zIndex = "7";
 }
 
