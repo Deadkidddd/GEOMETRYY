@@ -35,6 +35,8 @@ function evenOrOddB() {
 const navBtn = document.getElementById("dropdown_menu");
 const navElements = document.getElementsByClassName("dm_material");
 
+navBtn.onclick = function(){
+evenOrOddB();
 if(numberTypeBar == `odd`){
     for (let nav of navElements) {
         nav.style.animation = "fadein 0.5s";
@@ -47,7 +49,7 @@ if(numberTypeBar == `even`){
         nav.style.animation = "fadeout 0.5s";
         nav.style.display = "none";}
     numberBar = numberBar + 1;
-}
+}};
 
 navBtn.addEventListener("mouseover", function() {
     for (let nav of navElements) {
