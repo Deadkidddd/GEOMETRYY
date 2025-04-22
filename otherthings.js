@@ -17,24 +17,45 @@ function changeTop(element, topOffset) {
 
 //Navigation
 
+//Number for even or odd to show/hide text because i overcomplicate things
+let numberBar = 0; // Initialize the number variable
+let numberTypeBar;
+
+function evenOrOddB() {
+    if (numberBar %2 == 0) {
+        numberTypeBar = "even";
+    }
+    else{
+        numberTypeBar = "odd";
+    }
+};
+
 //shows navigation bar
 
 const navBtn = document.getElementById("dropdown_menu");
 const navElements = document.getElementsByClassName("dm_material");
+
+if(numberTypeBar == `odd`){
+    for (let nav of navElements) {
+        nav.style.animation = "fadein 0.5s";
+        nav.style.display = "block";
+    }
+    numberBar = numberBar + 1;
+}
+if(numberTypeBar == `even`){
+    for (let nav of navElements) {
+        nav.style.animation = "fadeout 0.5s";
+        nav.style.display = "none";}
+    numberBar = numberBar + 1;
+}
 
 navBtn.addEventListener("mouseover", function() {
     for (let nav of navElements) {
         nav.style.animation = "fadein 0.5s";
         nav.style.display = "block";
     }
+    numberBar = numberBar + 1;
 });
-
-navBtn.onclick = function() {
-    for (let nav of navElements) {
-        nav.style.animation = "fadeout 0.5s";
-        nav.style.display = "none";
-    }
-}
 
 //Number for even or odd to show/hide text because i overcomplicate things
 let number = 0; // Initialize the number variable
