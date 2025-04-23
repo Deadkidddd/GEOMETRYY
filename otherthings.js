@@ -35,10 +35,6 @@ function evenOrOddB() {
 const navBtn = document.getElementById("dropdown_menu");
 const navElements = document.getElementsByClassName("dm_material");
 
-navBtn.onclick = function(){
-    table();
-}
-
 function table(){
 evenOrOddB();
 if(numberTypeBar == `odd`){
@@ -55,6 +51,10 @@ if(numberTypeBar == `even`){
 }
     numberBar = numberBar + 1;
 };
+
+navBtn.onclick = function(){
+    table();
+}
 
 navBtn.addEventListener("mouseover", function() {
     for (let nav of navElements) {
@@ -300,12 +300,14 @@ function evenOrOddE() {
 };
 
 function showExplain(){
+table();
 document.getElementById("explain").style.display = "block";
 document.getElementById("explain").style.animation = "fadein 3s";
 document.getElementById("picture_of_my_cat").style.opacity = "15%";
 document.getElementById("picture_of_my_cat").style.zIndex = "22";
-document.getElementById("dropdown_menu").style.backgroundColor = "Fuchsia";
-document.getElementById("dropdown_menu").style.opacity = "100%";
+    if(numberTypeBar = `even`){
+        document.getElementById("dropdown_menu").style.backgroundColor = "Fuchsia";
+        document.getElementById("dropdown_menu").style.opacity = "100%";
 }
 
 function hideExplain(){
@@ -320,7 +322,6 @@ evenOrOddE();
     
     if (numberTypeE == `even`){
         showExplain();
-        table();
     }
     if (numberTypeE == `odd`){
         hideExplain();
