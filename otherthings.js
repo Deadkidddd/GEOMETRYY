@@ -51,6 +51,7 @@ if(numberTypeBar == `even`){
     for (let nav of navElements) {
         nav.style.animation = "fadeout 0.5s";
         nav.style.display = "none";}
+        document.getElementById("dropdown_menu").style.backgroundColor = "transparent";
 }
     numberBar = numberBar + 1;
 };
