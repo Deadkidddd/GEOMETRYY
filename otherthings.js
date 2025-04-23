@@ -35,7 +35,9 @@ function evenOrOddB() {
 const navBtn = document.getElementById("dropdown_menu");
 const navElements = document.getElementsByClassName("dm_material");
 
-navBtn.onclick = function(){
+navBtn.onclick = table();
+
+function table(){
 evenOrOddB();
 if(numberTypeBar == `odd`){
     for (let nav of navElements) {
@@ -295,15 +297,19 @@ function evenOrOddE() {
 };
 
 function showExplain(){
+table();
+numberBar = numberBar + 1;
 document.getElementById("explain").style.display = "block";
 document.getElementById("explain").style.animation = "fadein 3s";
 document.getElementById("picture_of_my_cat").style.opacity = "15%";
 document.getElementById("picture_of_my_cat").style.zIndex = "22";
 document.getElementById("dropdown_menu").style.backgroundColor = "Fuchsia";
-document.getElementById("dropdown_menu").style.opacity = "40%";
+document.getElementById("dropdown_menu").style.opacity = "100%";
 }
 
 function hideExplain(){
+table();
+numberBar = numberBar + 1;
 document.getElementById("explain").style.display = "none";
 document.getElementById("picture_of_my_cat").style.opacity = "100%";
 document.getElementById("dropdown_menu").style.backgroundColor = "transparent";
@@ -312,6 +318,7 @@ document.getElementById("picture_of_my_cat").style.zIndex = "7";
 
 document.getElementById("explain_btn").onclick = function(){
 evenOrOddE();
+    
     if (numberTypeE == `odd`){
         showExplain();
     }
