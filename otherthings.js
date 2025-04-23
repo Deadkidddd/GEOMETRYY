@@ -320,7 +320,6 @@ evenOrOddE();
     if (numberTypeE == `even`){
         showExplain();
         table();
-        numberBar = numberBar + 1;
     }
     if (numberTypeE == `odd`){
         hideExplain();
