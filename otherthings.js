@@ -35,7 +35,9 @@ function evenOrOddB() {
 const navBtn = document.getElementById("dropdown_menu");
 const navElements = document.getElementsByClassName("dm_material");
 
-navBtn.onclick = table();
+navBtn.onclick = function(){
+    table();
+}
 
 function table(){
 evenOrOddB();
