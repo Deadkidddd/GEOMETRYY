@@ -299,8 +299,6 @@ function evenOrOddE() {
 };
 
 function showExplain(){
-table();
-numberBar = numberBar + 1;
 document.getElementById("explain").style.display = "block";
 document.getElementById("explain").style.animation = "fadein 3s";
 document.getElementById("picture_of_my_cat").style.opacity = "15%";
@@ -310,8 +308,6 @@ document.getElementById("dropdown_menu").style.opacity = "100%";
 }
 
 function hideExplain(){
-table();
-numberBar = numberBar + 1;
 document.getElementById("explain").style.display = "none";
 document.getElementById("picture_of_my_cat").style.opacity = "100%";
 document.getElementById("dropdown_menu").style.backgroundColor = "transparent";
@@ -323,6 +319,8 @@ evenOrOddE();
     
     if (numberTypeE == `even`){
         showExplain();
+        table();
+        numberBar = numberBar + 1;
     }
     if (numberTypeE == `odd`){
         hideExplain();
