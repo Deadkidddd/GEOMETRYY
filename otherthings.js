@@ -308,7 +308,7 @@ document.getElementById("picture_of_my_cat").style.zIndex = "22";
     if(numberTypeBar = `even`){
         document.getElementById("dropdown_menu").style.backgroundColor = "Fuchsia";
         document.getElementById("dropdown_menu").style.opacity = "100%";
-}
+}}
 
 function hideExplain(){
 document.getElementById("explain").style.display = "none";
