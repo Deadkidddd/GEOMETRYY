@@ -321,7 +321,6 @@ evenOrOddE();
     if (numberTypeE == `even`){
         showExplain();
         table();
-        document.getElementById("dropdown_menu").style.backgroundColor = "Fuchsia";
     }
     if (numberTypeE == `odd`){
         hideExplain();
