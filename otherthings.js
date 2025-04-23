@@ -321,10 +321,10 @@ document.getElementById("picture_of_my_cat").style.zIndex = "7";
 document.getElementById("explain_btn").onclick = function(){
 evenOrOddE();
     
-    if (numberTypeE == `odd`){
+    if (numberTypeE == `even`){
         showExplain();
     }
-    if (numberTypeE == `even`){
+    if (numberTypeE == `odd`){
         hideExplain();
     }
     numberExtra = numberExtra + 1;
