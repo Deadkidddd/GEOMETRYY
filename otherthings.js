@@ -83,27 +83,40 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 //Shows option 1 text
 const why = document.getElementById("dm_one");
 const whyTextElements = document.getElementsByClassName("changes_why_content");
+let showWhyTextRunning = false; // To track if animation is running
 
 async function showWhyText() {
+    showWhyTextRunning = true;
     let topOffset = 65; // Initialize topOffset to 65
+    
     for (let whyText of whyTextElements) {
+            if (!showWhyTextRunning) break; // Cancel loop if toggled off
+
+            // Reset animation by forcing reflow
+            whyText.style.animation = "none";
+            void whyText.offsetWidth; // This triggers a reflow
+            whyText.style.animation = "fadein 0.5s";
+        
             change(whyText, "absolute", "30px", "red");
             whyText.style.animation = "fadein 0.5s";
             whyText.style.display = "block";
             whyText.style.top = "40%"; // Set the initial top position to 40%
+        
             await delay(3000); // Wait for 3 seconds before showing the next element
             change(whyText, "absolute", "20px", "blue");
             changeTop(whyText, topOffset);
             topOffset += 5; // Increment topOffset for the next element
-
-
-            
     }
 }
 function hideWhyText() {
     for (let whyText of whyTextElements) {
+        void whyText.offsetWidth; // Trigger reflow to reset animation
         whyText.style.animation = "fadeout 0.5s";
-        whyText.style.display = "none";
+
+        setTimeout(() => {
+            // Wait for fadeout to finish before hiding
+            whyText.style.display = "none";
+        }, 500);
     }
 }
 
@@ -115,7 +128,7 @@ why.onclick = function(){
     else{
         hideWhyText();
     }
-    number = number + 1;
+    number = ++;
 }
 
 //Shows option 2 text
