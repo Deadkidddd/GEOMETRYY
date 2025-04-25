@@ -110,6 +110,7 @@ async function showWhyText() {
 }
 function hideWhyText() {
     for (let whyText of whyTextElements) {
+        whyText.style.display = "none";
         void whyText.offsetWidth; // Trigger reflow to reset animation
         whyText.style.animation = "fadeout 0.5s";
 
