@@ -128,7 +128,7 @@ why.onclick = function(){
     else{
         hideWhyText();
     }
-    number = ++;
+    number = number + 1;
 }
 
 //Shows option 2 text
